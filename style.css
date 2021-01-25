@@ -1,0 +1,124 @@
+/* ----------------------Type identifiers--------------------------- */
+
+body{
+  margin: 0px;
+}
+
+p{
+  margin:0px;
+}
+
+nav{
+  list-style-type: none;
+  position: absolute;
+}
+
+nav li{
+  display: inline;
+  margin-right: 100PX;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav a{
+  color: #808080;
+  font-family: Segoe, "Open Sans", "Source Sans Pro";
+  font-size: 30px;
+  text-transform: capitalize;
+  /*font-weight: */
+}
+
+nav a:link{
+  color: #808080;
+}
+
+nav a:active, nav a:visited, nav a:hover{
+  color:#006D95;
+}
+
+nav a:last-child{
+  margin-right:0px;
+}
+
+input{
+  width:
+}
+
+/* -------------------------Class Identifiers------------------------ */
+.Title{
+  top: 0px;
+}
+
+.Segoe{
+  font-family: Segore, "Open Sans", "Source Sans Pro";
+}
+
+.PageBody{
+
+}
+
+.FormFields{
+
+}
+
+.PageLink{
+
+}
+
+.Button{
+
+}
+/* -------------------ID identifiers--------------------- */
+#Header{
+  font-size: 70px;
+  color:#5B5B5B;
+}
+
+#Subheader{
+  font-size: 55px;
+  color: #808080;
+}
+
+#SubHeader #ByteCareBlue{
+  color: #006d95;
+}
+
+#Subheader #ByteCarePurple{
+  color: #940094;
+}
+
+#ByteCareBlue{
+  color: #006d95;
+}
+
+#ByteCarePurple{
+  color: #940094;
+}
+
+#SignInBody{
+  margin: auto;
+}
+
+#SignInImage{
+  width: 524px;
+  height: 387px;
+  margin:auto;
+}
+
+#SignInForm{
+
+}
+
+#ForgotPassword{
+
+}
+
+#SignUp{
+
+}
+
+#LoginButton{
+
+}
