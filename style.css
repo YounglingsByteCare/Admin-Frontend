@@ -10,12 +10,14 @@ p{
 
 nav{
   list-style-type: none;
-  position: absolute;
+  width: 1235.25px;
+  margin: auto;
+  margin-top: 7.5px;
 }
 
 nav li{
   display: inline;
-  margin-right: 100PX;
+  margin-right: 75px;
 }
 
 a{
@@ -24,26 +26,25 @@ a{
 
 nav a{
   color: #808080;
-  font-family: Segoe, "Open Sans", "Source Sans Pro";
-  font-size: 30px;
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 21.5px;
   text-transform: capitalize;
-  /*font-weight: */
 }
 
-nav a:link{
+nav a:link, nav a:visited{
   color: #808080;
 }
 
-nav a:active, nav a:visited, nav a:hover{
+nav a:active,nav a:hover{
   color:#006D95;
 }
 
-nav a:last-child{
+nav li:last-child{
   margin-right:0px;
 }
 
-input{
-  width:
+footer{
+ margin: 112.5px 0px 30px;
 }
 
 /* -------------------------Class Identifiers------------------------ */
@@ -51,34 +52,492 @@ input{
   top: 0px;
 }
 
+.MainHeader{
+  text-align: center;
+  font-size: 60px;
+}
+
+.MainSubheader{
+  text-align: center;
+  font-size:37.5px;
+  color: #808080;
+}
+
+.MainSubHeader{
+  text-align: center;
+  font-size:37.5px;
+  color: #808080;
+}
+
 .Segoe{
-  font-family: Segore, "Open Sans", "Source Sans Pro";
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+}
+
+.SignInImageDiv{
+  width: 393px;
+  margin: auto;
+  margin-bottom: 37.5px;
+}
+
+.ImageDiv{
+  float: left;
 }
 
 .PageBody{
-
-}
-
-.FormFields{
-
 }
 
 .PageLink{
+  font-family: "Open Sans", "Source Sans Pro";
+  font-size: 13.55px;
+  display: inline;
+  text-decoration: underline;
+}
 
+.PageLink:hover, .PageLink:active{
+  color: #006D95;
 }
 
 .Button{
+  width: 150px;
+  height: 37.50px;
+  margin: auto;
+}
 
+.Button input{
+  width: 100%;
+  height:100%;
+  border: none;
+  border-radius: 11.25px;
+  cursor: pointer;
+  outline: none;
+  background-image: linear-gradient(to right, #1D9FCF, #940049);
+
+  color: #FFF;
+  font-family: "Open Sans", "Source Sans Pro";
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.Button input:hover, .Button input:active{
+  transition-duration: 5s;
+  background-image: linear-gradient(to right, #1D9FCF, #1D9FCF);
+}
+
+ #SetNewPasswordBtn{
+  margin-top: 45px;;
+}
+
+.FormFields{
+  display: block;
+  width: 262.5px;
+  height: 56.25px;
+  margin-bottom: 15px;
+}
+
+.FormFields input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 7.5px;
+  background-color: #D2D2D2;
+  outline: none;
+
+  color: #4D4D4D;
+  font-family: "Open Sans", "Source Sans Pro";
+  font-size: 18.75px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/********************************************************/
+
+.ImageDivFP {
+  width: 292.5px;
+  height: 258px;
+  margin: auto;
+}
+
+.ImageDiv #SignUpImage{
+  width: 600.75px;
+  height: 100%;
+  float: left;
+}
+
+.SignUpForm{
+  width: 262.5px;
+  height: 285px;
+  padding: 64.875px 0px;
+  display: inline;
+  float: right;
+}
+
+.Button #SignUpButton{
+  margin: auto;
+}
+
+.PageFields{
+  width: 262.5px;
+  height: 142.5px;
+  margin: auto;
+}
+
+.NewPassPage{
+  width: 508.5px;
+  height: 371.25px;
+  margin: auto;
+  margin-top: 112.5px;
+}
+
+.NewPassPage img{
+  width: 508.5px;
+  height: 306px;
+  margin: auto;
+}
+
+.NewPassPageLinks{
+  width: 262.5px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.PageSection{
+
+}
+
+.ContentHeader{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 48.75px;
+  margin-left: 75px;
+  margin-bottom: 22.5px;
+  margin-top: 37.5px;
+}
+
+.ContentHeaderExc{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 48.75px;
+  margin-bottom: 22.5px;
+  margin-top: 37.5px;
+}
+
+.ContentSubHeader{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 41.25px;
+  margin-left: 75px;
+  color: #808080;
+}
+
+.ContentBubbles{
+  margin: 0px 0px 22.5px 75px;;
+}
+
+.Bubble{
+  width: 300px;
+  height: 300px;
+  margin: 0px 24.375px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.Bubble:first-child{
+  margin-left: 0px;
+}
+
+.BubbleImage{
+  width:300px;
+  height: 212.25px;
+}
+
+.BubbleImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.BubbleInfo{
+  width: 300px;
+  height: 90px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.BubbleName{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 22.5px;
+  text-align: center;
+  color: #FFF;
+  margin: 0px;
+  padding-top: 3.75px;
+}
+
+.BubbleTime{
+  font-family: "Segoe UI" "Open Sans", "Source Sans Pro";
+  font-size: 15px;
+  text-align: center;
+  color: #FFF;
+  margin: 0px;
+  padding-bottom: 3.75px;
+}
+
+.BubbleLink{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 15px;
+  text-align: center;
+  text-decoration: underline;
+  color: #FFF;
+  margin: 0px;
+}
+
+.BubbleLink a:visited, .BubbleLink a:visited {
+  color: #FFF;
+}
+
+.BubbleLink a:hover, .BubbleLink a:active{
+  color: #52B5D9;
+}
+
+.BlueCard{
+  background-color: #006D95;
+}
+
+.MagentaCard{
+  background-color: #DA0E66;
+}
+
+.MainPageLink{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 22.5px;
+  text-align: center;
+  text-decoration: underline;
+  color: #940094;
+}
+
+.MainPageLink a:hover, .MainPageLink a:active{
+  color:#006D95;
+}
+
+.PageSection{
+  margin-bottom: 37.5px;
+}
+
+.CommentBubbles{
+}
+
+.Comment{
+  width: 450px;
+  height: 300px;
+  margin: 0px 5px;
+  border-radius: 18.75px;
+
+  display: inline-block;
+}
+
+.CommentPageBody{
+  width: 922.5px;
+  margin: auto;
+  margin-top: 37.75px;
+}
+
+.CommentSection{
+  margin-bottom: 25px;
+}
+
+.Comment:last-child{
+  margin-right: 0px;
+}
+
+.Comment:first-child{
+  margin-left: 0px;
+}
+
+.CommentText{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 22.5px;
+
+  width: 100%;
+  height: 187.5px;
+
+  background-color: #F5F5F5;
+  border-radius: 18.75px 18.75px 0px 0px;
+}
+
+.CommentText p{
+  padding: 30px 33px 37.5px 33px;
+  color: #808080;
+  text-align: center;
+}
+
+.ClientMetaDiv{
+  width: 100%;
+  height: 112.5px;
+  color: #FFF;
+
+  background-color: #940094;
+  border-radius: 0px 0px 18.75px 18.75px;
+}
+
+.ClientMeta{
+  padding: 28.5px 0px;
+  margin-left: 22.5px;
+}
+
+.ClientMeta p{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+}
+
+.ClientMeta .ClientName{
+  font-size: 22.5px;
+}
+
+.ClientMeta.CommentDate{
+  font-size: 19.5px;
+}
+
+.ClientMeta img{
+  display: inline;
+  width: 48.75px;
+  height: 48.75px;
+  border-radius: 50%;
+
+  margin-right: 18.75px;
+}
+
+.CommentBubbles{
+  width: 1395px;
+  margin: auto;
+  margin-bottom: 22.5px;
+}
+
+.CommentTextP{
+  display: inline-block;
+}
+
+.TroubleBubble{
+  display: inline-block;
+  width: 450px;
+  height: 398.25px;
+  border-radius: 18.75px;
+
+  margin: 0px 5px;
+}
+
+.PageSection .TroubleBubble:first-child{
+  margin-left: 0px;
+}
+
+.PageSection .TroubleBubble:last-child{
+  margin-right: 0px;
+}
+
+.HelpImage{
+  width: 100%;
+  height: 285.75px;
+
+  border-radius: 18.75px 18.75px 0px 0px;
+  background-color: #F5F5F5;
+}
+
+.HelpImage img{
+  width: 367.5px;
+  height: 270.75px;
+  margin: 15px 41.25px 0px;
+}
+
+.HelpInfo{
+  width: 100%;
+  height: 112.5px;
+
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  text-align: center;
+  color: #FFF;
+
+  background-image: linear-gradient(to right, #1D9FCF, #940049);
+  border-radius: 0px 0px  18.75px 18.75px;
+}
+
+.ContactUsDiv{
+  width: 992.25px;
+  height: 354.75px;
+  margin: auto;
+  margin-top: 37.5px;
+}
+
+.ContactUsDiv img{
+  width: 608.25px;
+  height: 319.5px;
+  float: left;
+}
+
+.Form{
+  width: 262.5px;
+  float: right;
+}
+
+.Form input[type=textarea]{
+  width: 100%;
+  padding: 54px 0px;
+  margin-bottom: 54px;
+}
+
+.ContentBody{
+  width: 1059px;
+  margin: auto;
+  margin-top: 37.75px;
+}
+
+.MainContentBubbles{
+  margin-bottom: 52.5px;
+}
+
+.FAQBubble{
+  width: 564.75px;
+  margin: auto;
+  margin-bottom: 112.5px;
+
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  color: #808080;
+  text-align: center;
+}
+
+.FAQBubble #Title{
+  font-size: 37.75px;
+  color: #006D95;
+  margin-bottom: 22.5px;
+}
+
+.AboutUsBubble{
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 45px;
+
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  color: #808080;
+  text-align: center;
+}
+
+.AboutUsBubble #BubbleTitle{
+  font-size: 37.25px;
+  color: #1D9FCF;
+  margin-bottom: 22.5px;
+}
+
+.AboutUsPic{
+  width: 777px;
+  height: 586.5px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /* -------------------ID identifiers--------------------- */
 #Header{
-  font-size: 70px;
+  font-size: 52.5px;
   color:#5B5B5B;
+  text-align: center;
+  margin-bottom: 7.5px;
 }
 
 #Subheader{
-  font-size: 55px;
+  font-size: 41.25px;
   color: #808080;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #SubHeader #ByteCareBlue{
@@ -97,28 +556,168 @@ input{
   color: #940094;
 }
 
+#ByteMePurple{
+  color: #940094
+}
+
 #SignInBody{
   margin: auto;
 }
 
 #SignInImage{
-  width: 524px;
-  height: 387px;
-  margin:auto;
+  width: 100%;
+  height: 290.25px;
 }
 
 #SignInForm{
-
+  width: 262.5px;
+  height: 160.5px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
-#ForgotPassword{
+#ForgotPasswordLink{
+  float: left;
+}
 
+#SignUpLink{
+float:right;
+}
+
+#SignInLink{
+  float: right;
+}
+
+#SignInLinkFP{
+  float: left;
+}
+
+#SignInLinkNP{
+  float: left;
+}
+
+#SignUpLinkNP{
+  float: right;
 }
 
 #SignUp{
+  width: 1082.25px;
+  height: 414.75px;
+  margin: auto;
+  margin-top: 67.5px;
+}
 
+#SignUpButton input{
+  margin-top: 30px;
 }
 
 #LoginButton{
 
+}
+
+#ForgotPasswordImage{
+  width: 100%;
+  height: 100%;
+}
+
+#NewPassTitle{
+  font-size: 37.5px;
+  text-align:center;
+  color: #808080;
+}
+
+#FPIDiv{
+ width: 292.5px;
+ height: 258px;
+ margin: auto;
+ display: block;
+ margin-bottom: 22.875px;
+}
+
+#BlueHeader{
+  color: #006D95;
+}
+
+#GreyHeader{
+  color: #808080;
+}
+
+#FooterHeading{
+  text-align: center;
+  font-size: 33.75px;
+}
+
+#FooterSubheading{
+  text-align: center;
+  font-size: 22.5px;
+  color: #808080;
+}
+
+#TroubleSection{
+  width: 1395px;
+  margin: auto;
+}
+
+#TitleText{
+  font-size: 26.25px;
+}
+
+#SubtitleText{
+  font-size: 18.75px;
+}
+
+#TroubleBubbleLink{
+  margin-top: 22.5px;
+}
+
+#TitleText{
+  padding: 22.5px 0px 7.5px;
+}
+
+#ContactUsException{
+  margin-top: 0px;
+  color: #006D95;
+}
+
+#ContactUsButton{
+  width: 150px;
+  height: 37.50px;
+  margin: 125px 56.25PX 0PX;
+
+  border: none;
+  border-radius: 11.25px;
+  cursor: pointer;
+  outline: none;
+  background-image: linear-gradient(to right, #1D9FCF, #940049);
+
+  color: #FFF;
+  font-family: "Open Sans", "Source Sans Pro";
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+#ContactUsButton:hover, #ContactUsButton:active{
+  background-image: linear-gradient(to right, #1D9FCF, #1D9FCF)
+}
+
+#ByteCareGrey{
+  color: #808080;
+}
+
+#FAQImage{
+  width: 633.75px;
+  height: 446.25px;
+  margin: auto;
+  margin-bottom: 45px;
+  margin-top: 22.5px;
+  display: block;
+}
+
+#FAQImage Img{
+width: 100%;
+}
+
+#AboutUsImage{
+    width:100%;
+    height: 100%;
 }
