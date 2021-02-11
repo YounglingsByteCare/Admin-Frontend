@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title>ByteCare - Sign Up</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -16,26 +17,34 @@
         <img src="images/undraw_authentication_fsn5.svg" alt="Image Not Found" id="SignUpImage">
       </div>
 
-      <div class="SignUpForm">
-        <div class="FormFields">
-          <input type="text" name="Name" placeholder="Name">
+      <form name="signUpForm">
+        <div class="SignUpForm">
+          <div class="FormFields">
+            <input type="text" name="Name" placeholder="Name">
+          </div>
+
+          <div class="FormFields">
+            <input type="text" name="Email" placeholder="Email">
+          </div>
+
+          <div class="FormFields">
+            <input type="Password" name="Password" placeholder="Password">
+          </div>
+
+          <p id="SignInLink" class="PageLink"><a href="index.html">Sign In</a></p>
+
+          <p class="error errorhidden">Error : Process Failed</p>
+
+        <div class="Button" id="SignUpButton">
+          <input type="submit" name="Sign Up" placeholder="Sign Up">
         </div>
-
-        <div class="FormFields">
-          <input type="text" name="Email" placeholder="Email">
-        </div>
-
-        <div class="FormFields">
-          <input type="Password" name="Password" placeholder="Password">
-        </div>
-
-        <p id="SignInLink" class="PageLink"><a href="index.html">Sign In</a></p>
-
-      <div class="Button" id="SignUpButton">
-        <input type="submit" name="Sign Up" placeholder="Sign Up">
       </div>
-    </div>
+      </form>
 
     </section>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"> </script>
+
   </body>
 </html>

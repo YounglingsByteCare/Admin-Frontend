@@ -44,8 +44,21 @@ nav li:last-child{
 }
 
 footer{
- margin: 112.5px 0px 30px;
+ margin: 50px 0px 30px;
  clear:both;
+}
+
+.errorhidden{
+  display:none;
+}
+
+.error{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 22.5px;
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 /* -------------------------Class Identifiers------------------------ */
@@ -145,7 +158,6 @@ footer{
   color: #4D4D4D;
   font-family: "Open Sans", "Source Sans Pro";
   font-size: 18.75px;
-  text-transform: capitalize;
   text-align: center;
 }
 

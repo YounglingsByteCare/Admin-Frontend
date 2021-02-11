@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>ByteCare - Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+    </script>
   </head>
   <body>
     <section class="Title">
@@ -264,6 +267,8 @@
 
         <div class="Form">
 
+          <form name="contactUs">
+
           <div class="FormFields">
             <input type="text" name="Name" placeholder="Name">
           </div>
@@ -276,8 +281,11 @@
             <input type="textarea" name="Decsription" placeholder="What's On Your Mind ?">
           </div>
 
+          <p class="error errorhidden">Error : Process Failed</p>
+
           <input type="submit" name="Send" placeholder="Send" id="ContactUsButton">
         </div>
+      </form>
 
       </div>
 
@@ -287,6 +295,9 @@
       <p class="Segoe" id="FooterHeading"><span class="Segoe" id="ByteCareBlue">Byte</span><span clas="Segoe" id="ByteMePurple">Care</span></p>
       <p class="Segoe" id="FooterSubheading">bytecare0gmail.com</p>
     </footer>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
 
   </body>
 </html>

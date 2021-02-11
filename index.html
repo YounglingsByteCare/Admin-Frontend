@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <link rel="stylesheet" href="style.css">
     <title>ByteCare - Sign In</title>
   </head>
@@ -17,6 +18,7 @@
         <img src="images/undraw_doctors_hwty.svg" alt="Image Not Found" id="SignInImage">
       </div>
 
+      <form name="signInForm">
         <div id="SignInForm">
           <div class="FormFields">
             <input type="text" name="Username" placeholder="Username" >
@@ -30,11 +32,17 @@
           <p id="SignUpLink" class="PageLink"><a href="SignUp.html">Sign Up</a></p>
         </div>
 
+        <p class="error errorhidden">Error: Process Failed</p>
+
         <div class="Button" id="LoginButton">
           <input type="submit" name="Login" placeholder="Login">
         </div>
+      </form>
 
     </section>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
 
   </body>
 </html>
