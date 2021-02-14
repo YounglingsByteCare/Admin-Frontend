@@ -1,29 +1,63 @@
-$("form[name=signInForm]").submit(function(e){
+$("form[name=signInForm]").on('submit', function(e){
 
   var $form = $(this);
   var $error= $form.find(".error");
-  var data = $form.serializeArray()[0];
+  var data = convertToDataObject( $form.serializeArray());
+  // var data = JSON.stringify($form.serializeArray()[0]);
 
-console.log(JSON.stringify(data));
+  // let data = {
+  //   'email': 'orange@gmail.com',
+  //   'password': 'tomato'
+  // };
 
-  $.ajax({
-    url: "http://localhost:5000/api/auth/admin/login",
-    type: "POST",
-    data: data,
-    dataType: "json",
-    headers: { 'Access-Control-Allow-Origin': '*' },
-    success: function(resp){
-      console.log(resp);
-      window.location.href="/HomePage.html";
-      resp['token'];
+  let response = fetch('http://localhost:5000/api/auth/admin/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     },
-    error: function(resp){
-      $error.text(resp.responseJSON.error).removeClass("errorhidden"); // this is to select the specified class in quotes
-    }
+    body: JSON.stringify(data),
+  }).then(response => {
+    let result = response.json();
+    alert('Request finished')
+    console.log(result);
   });
 
   e.preventDefault();
+  return false;
+
+
+// console.log(JSON.stringify(data));
+//
+//   $.ajax({
+//     url: "http://localhost:5000/api/auth/admin/login",
+//     type: "POST",
+//     data: data,
+//     dataType: "json",
+//     headers: { 'Access-Control-Allow-Origin': '*' },
+//     success: function(resp){
+//       console.log(resp);
+//       window.location.href="/HomePage.html";
+//       resp['token'];
+//     },
+//     error: function(resp){
+//       $error.text(resp.responseJSON.error).removeClass("errorhidden"); // this is to select the specified class in quotes
+//     }
+//   });
+//
+//   e.preventDefault();
 });
+
+function convertToDataObject(formData) {
+  var result = {};
+
+
+  formData.forEach((e) => {
+    result[e['name']] = e['value'];
+  });
+
+  return result;
+}
 
 
 $("form[name=signUpForm]").submit(function(e){
