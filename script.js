@@ -3,12 +3,13 @@ $("form[name=signInForm]").on('submit', function(e){
   var $form = $(this);
   var $error= $form.find(".error");
   var data = convertToDataObject( $form.serializeArray());
-  // var data = JSON.stringify($form.serializeArray()[0]);
+
+  /* var data = JSON.stringify($form.serializeArray()[0]);
 
   // let data = {
   //   'email': 'orange@gmail.com',
   //   'password': 'tomato'
-  // };
+  // };*/
 
   let response = fetch('http://localhost:5000/api/auth/admin/login', {
     method: 'POST',
@@ -27,7 +28,7 @@ $("form[name=signInForm]").on('submit', function(e){
   return false;
 
 
-// console.log(JSON.stringify(data));
+/* console.log(JSON.stringify(data));
 //
 //   $.ajax({
 //     url: "http://localhost:5000/api/auth/admin/login",
@@ -45,7 +46,7 @@ $("form[name=signInForm]").on('submit', function(e){
 //     }
 //   });
 //
-//   e.preventDefault();
+//   e.preventDefault();*/
 });
 
 function convertToDataObject(formData) {
@@ -133,7 +134,7 @@ $("form[contactUs]").submit(function(e){
 e.preventDefault();
 });
 
-//add to every ajax call
+/*add to every ajax call
 //headers: { 'Access-Control-Allow-Origin': '*' };
 //for when you need to need to login
 /*headers: {
