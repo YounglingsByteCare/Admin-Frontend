@@ -48,18 +48,23 @@ footer{
  clear:both;
 }
 
-.errorhidden{
-  display:none;
+button{
+  width: 150px;
+  height: 37.50px;
+  margin: 0px 56px 0px;
+
+  border: none;
+  border-radius: 11.25px;
+  cursor: pointer;
+  outline: none;
+  background-image: linear-gradient(to right, #1D9FCF, #940049);
+
+  color: #FFF;
+  font-family: "Open Sans", "Source Sans Pro";
+  font-size: 15px;
+  text-transform: capitalize;
 }
 
-.error{
-  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
-  font-size: 22.5px;
-  text-align: center;
-  color: red;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
 
 /* -------------------------Class Identifiers------------------------ */
 .Title{
@@ -159,6 +164,10 @@ footer{
   font-family: "Open Sans", "Source Sans Pro";
   font-size: 18.75px;
   text-align: center;
+}
+
+button:hover, button:active{
+  background-image: linear-gradient(to right, #1D9FCF, #1D9FCF)
 }
 
 /********************************************************/
@@ -639,6 +648,19 @@ footer{
 .HospitalSettings .FormFields input{
   text-align: left;
   padding-left: 15px;
+}
+
+.errorhidden{
+  display:none;
+}
+
+.error{
+  font-family: "Segoe UI", "Open Sans", "Source Sans Pro";
+  font-size: 22.5px;
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 /* -------------------ID identifiers--------------------- */
 #Header{

@@ -1,15 +1,166 @@
-$("form[name=signInForm]").on('submit', function(e){
+/**********************FETCH API FUNCTIONS*****************/
+
+ function login(url){
+  var $form = document.getElementsByName('SignInForm');
+  var $error= document.getElementsByClassName(".error");
+  var data = convertToDataObject($form.serializeArray());
+
+  const response = fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    cache: 'no-cache',
+    credentials: 'include',
+
+    headers: {
+      'Content-Type':'appilcation/json',
+      'Access-Control-Allow-Origin': '*'
+    },
+    redirect: "HomePage.html",
+    referrerPolicy: 'no-referrer',
+    body: JSON.stringify(data)
+  }).then(
+    (data) => console.log(data.json())
+
+  ).catch((error) => console.log(error));
+  return response.json();
+}
+
+////////////////////////////////////////////////
+
+function SignUp(url){
+ var $form = document.getElementsByName('SignUpForm');
+ var $error= $form.find(".error");
+ var data = convertToDataObject( $form.serializeArray());
+
+ const response = fetch(url, {
+   method: 'POST',
+   mode: 'cors',
+   cache: 'no-cache',
+   credentials: 'include',
+
+   headers: {
+     'Content-Type':'appilcation/json',
+     'Access-Control-Allow-Origin': '*'
+   },
+   redirect: "/HomePage.html",
+   referrerPolicy: 'no-referrer',
+   body: JSON.stringify(data)
+ }).then(
+   (data) => console.log(data.json())
+
+ ).catch((error) => console.log(error));
+ return response.json();
+}
+
+////////////////////////////////////////////////
+
+function forgotPassword(url){
+ var $form = document.getElementsByName('forgotPassword');
+ var $error= document.getElementsByClassName(".error");
+ var data = convertToDataObject($form.serializeArray());
+
+ const response = fetch(url, {
+   method: 'POST',
+   mode: 'cors',
+   cache: 'no-cache',
+   credentials: 'include',
+
+   headers: {
+     'Content-Type':'appilcation/json',
+     'Access-Control-Allow-Origin': '*'
+   },
+   redirect: "/NewPasswordSet.html",
+   referrerPolicy: 'no-referrer',
+   body: JSON.stringify(data)
+ }).then(
+   (data) => console.log(data.json())
+
+ ).catch((error) => console.log(error));
+ return response.json();
+}
+
+////////////////////////////////////////////////
+
+function save(url){
+ var $form = document.getElementsByName('adminSettings');
+ var $error= document.getElementsByClassName(".error");
+ var data = convertToDataObject($form.serializeArray());
+
+ const response = fetch(url, {
+   method: 'PUT',
+   mode: 'cors',
+   cache: 'no-cache',
+   credentials: 'include',
+
+   headers: {
+     'Content-Type':'appilcation/json',
+     'Access-Control-Allow-Origin': '*'
+     'Authorization': `Bearer ${token}`
+   },
+   redirect: "/AccountSettings.html",
+   referrerPolicy: 'no-referrer',
+   body: JSON.stringify(data)
+ }).then(
+   (data) => console.log(data.json())
+
+ ).catch((error) => console.log(error));
+ return response.json();
+}
+
+////////////////////////////////////////////////
+
+function contactUs(url){
+ var $form = document.getElementsByName('contactUs');
+ var $error= document.getElementsByClassName(".error");
+ var data = convertToDataObject($form.serializeArray());
+
+ const response = fetch(url, {
+   method: 'PUT',
+   mode: 'cors',
+   cache: 'no-cache',
+   credentials: 'include',
+
+   headers: {
+     'Content-Type':'appilcation/json',
+     'Access-Control-Allow-Origin': '*'
+     'Authorization': `Bearer ${token}`
+   },
+   redirect: "/AccountSettings.html",
+   referrerPolicy: 'no-referrer',
+   body: JSON.stringify(data)
+ }).then(
+   (data) => console.log(data.json())
+
+ ).catch((error) => console.log(error));
+ return response.json();
+}
+
+///////////////////////////////////////////////
+
+function convertToDataObject(formData) {
+  var result = {};
+
+  formData.forEach((e) => {
+    result[e['name']] = e['value'];
+  });
+
+  return result;
+}
+
+/**************************AJAX FUNCTIONS**************************/
+
+/* $("form[name=signInForm]").on('submit', function(e){
 
   var $form = $(this);
   var $error= $form.find(".error");
   var data = convertToDataObject( $form.serializeArray());
 
-  /* var data = JSON.stringify($form.serializeArray()[0]);
+  var data = JSON.stringify($form.serializeArray()[0]);
 
   // let data = {
   //   'email': 'orange@gmail.com',
   //   'password': 'tomato'
-  // };*/
+  // };
 
   let response = fetch('http://localhost:5000/api/auth/admin/login', {
     method: 'POST',
@@ -26,7 +177,6 @@ $("form[name=signInForm]").on('submit', function(e){
 
   e.preventDefault();
   return false;
-
 
 /* console.log(JSON.stringify(data));
 //
@@ -46,7 +196,7 @@ $("form[name=signInForm]").on('submit', function(e){
 //     }
 //   });
 //
-//   e.preventDefault();*/
+//   e.preventDefault();
 });
 
 function convertToDataObject(formData) {
@@ -137,7 +287,7 @@ e.preventDefault();
 /*add to every ajax call
 //headers: { 'Access-Control-Allow-Origin': '*' };
 //for when you need to need to login
-/*headers: {
+headers: {
   'Access-Control-Allow-Origin': '*',
   'Authorization': `Bearer ${token}`
 },*/

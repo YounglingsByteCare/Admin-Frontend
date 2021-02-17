@@ -30,32 +30,35 @@
 
         <img src="images/undraw_Online_information_re_erks.svg" alt="Image Not Found">
         <div class="SettingsForm">
-          <div class="FormFields">
-            <p id="FieldTitle">Name</p>
-            <input type="text" name="Name" placeholder="John">
-          </div>
 
-          <div class="FormFields">
-            <p id="FieldTitle">Surname</p>
-            <input type="text" name="Email" placeholder="Doe">
-          </div>
+          <form name="adminSettings" action="AccountSettings.html">
+            <div class="FormFields">
+              <p id="FieldTitle">Name</p>
+              <input type="text" name="Name" placeholder="John">
+            </div>
 
-          <div class="FormFields">
-            <p id="FieldTitle">Gender</p>
-            <input type="text" name="Gender" placeholder="Male">
-          </div>
+            <div class="FormFields">
+              <p id="FieldTitle">Surname</p>
+              <input type="text" name="Email" placeholder="Doe">
+            </div>
 
-          <div class="FormFields">
-            <p id="FieldTitle">ID Number</p>
-            <input type="text" name="IDNumber" placeholder="012345678901">
-          </div>
+            <div class="FormFields">
+              <p id="FieldTitle">Gender</p>
+              <input type="text" name="Gender" placeholder="Male">
+            </div>
 
-          <div class="FormFields">
-            <p id="FieldTitle">Phone Number</p>
-            <input type="text" name="Phone Number" placeholder="012-345-6789">
-          </div>
+            <div class="FormFields">
+              <p id="FieldTitle">ID Number</p>
+              <input type="text" name="IDNumber" placeholder="012345678901">
+            </div>
 
-          <p class="Segoe" id="EditText"><a href="#">Save</a></p>
+            <div class="FormFields">
+              <p id="FieldTitle">Phone Number</p>
+              <input type="text" name="Phone Number" placeholder="012-345-6789">
+            </div>
+          </form>
+
+          <p class="Segoe" id="EditText" onclick="save('http://byteme-test.herokuapp.com//api/admin')">Save</p>
         </div>
 
       </div>
@@ -82,7 +85,7 @@
             <input type="textarea" name="Hospital Address" placeholder="23 Middle Weg, Cape Town, South Africa, 0708">
           </div>
 
-          <p class="Segoe" id="EditText"><a href="#">Save</a></p>
+          <p class="Segoe" id="EditText" onclick="save('http://byteme-test.herokuapp.com/api/admin')">Save</p>
         </div>
 
       </div>
